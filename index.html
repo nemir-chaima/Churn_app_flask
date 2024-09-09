@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <div>
+        <h2>Churn Prediction</h2>
+        <form action="/predict" method="POST">
+            <label>Age:</label><input type="text" name="feature1"><br>
+            <label>Total_Purchase:</label><input type="text" name="feature2"><br>
+            <label>Num_Sites:</label><input type="text" name="feature3"><br>
+            <button type="submit">Predict</button>
+        </form>
+        <h3>{{ prediction_text }}</h3>
+    </div>
+</body>
+</html>
