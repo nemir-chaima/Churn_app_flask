@@ -18,7 +18,6 @@ def generate_input():
 
 def test_prediction_case_1(model):
     try:
-
         input_data = generate_input()
         prediction = model.predict(input_data)
         return 'no error' 
@@ -26,11 +25,8 @@ def test_prediction_case_1(model):
         print(f"Error during prediction: {e}")
         return 'error' 
 
-
 def test_process():
      model = load_model()
      print('model load fait')
      print(test_prediction_case_1(model))
-
-
 test_process()
