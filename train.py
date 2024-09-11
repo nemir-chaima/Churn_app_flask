@@ -15,7 +15,8 @@ def data_split(data):
     y = data['Churn']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     return X_train , X_test, y_train, y_test
-    #
+
+
 
 def normalisation(X_train , X_test):
     MN = MinMaxScaler()
