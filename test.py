@@ -22,8 +22,8 @@ def test_prediction_case_1(model):
         prediction = model.predict(input_data)
         return 'no error' 
     except Exception as e:
-        print(f"Error during prediction: {e}")
-        return 'error' 
+        return(f"Error during prediction: {e}")
+         
 
 def test_process():
      model = load_model()
