@@ -7,8 +7,7 @@ import pickle
 def load_data():
     data = pd.read_csv('customer_churn.csv')
     return data
-
-
+    
 def data_split(data):
     columns_to_keep = ['Age', 'Years' ,'Num_Sites', 'Churn']
     data = data[columns_to_keep]
@@ -41,6 +40,5 @@ def train_process():
     with open('random_forest_t.pkl', 'wb') as f:
         pickle.dump(rf, f)
     print('save fait ')
-
 
 train_process()
