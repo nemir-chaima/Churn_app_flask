@@ -24,8 +24,7 @@ def test_prediction_case_1(model):
         return 'no error' 
     except Exception as e:
         print(f"Error during prediction: {e}")
-        return 'error'
-    
+        return 'error' 
 
 
 def test_process():
