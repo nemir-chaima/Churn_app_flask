@@ -29,13 +29,17 @@ def train_model(x_train_scaled, y_train):
 
 def train_process():
     data = load_data()
-    print('load fait')
+    print('-------------------------------------------------------------------')
+    print('load de données: fait')
     X_train , X_test, y_train, y_test = data_split(data)
-    print('split fait')
+    print('-------------------------------------------------------------------')
+    print('Split de données : fait')
     x_train_scaled, x_test_scaled = normalisation(X_train , X_test)
-    print('normalisation fait')
+    print('-------------------------------------------------------------------')
+    print('Normalisation : fait')
     rf = train_model(x_train_scaled, y_train)
-    print('model fait')
+    print('-------------------------------------------------------------------')
+    print('construction de model : fait')
     import pickle
     with open('random_forest_t.pkl', 'wb') as f:
         pickle.dump(rf, f)
