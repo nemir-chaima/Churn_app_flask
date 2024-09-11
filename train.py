@@ -17,7 +17,6 @@ def data_split(data):
     return X_train , X_test, y_train, y_test
 
 
-
 def normalisation(X_train , X_test):
     MN = MinMaxScaler()
     x_train_scaled = MN.fit_transform(X_train)
@@ -42,5 +41,6 @@ def train_process():
     with open('random_forest_t.pkl', 'wb') as f:
         pickle.dump(rf, f)
     print('save fait ')
+
 
 train_process()
