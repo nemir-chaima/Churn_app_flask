@@ -10,6 +10,7 @@ def load_data():
 
 def data_split(data):
     columns_to_keep = ['Age', 'Years' ,'Num_Sites', 'Churn']
+    
     data = data[columns_to_keep]
     X = data.drop('Churn', axis=1)
     y = data['Churn']
