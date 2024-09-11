@@ -28,4 +28,4 @@ jobs:
     # Étape pour exécuter les tests
     - name: Run tests
       run: |
-        pythin -m unittest test_app.py
+        pythin -m unittest test.py
